@@ -1,0 +1,24 @@
+Checks: "-*,readability-identifier-naming"
+
+CheckOptions:
+  - key: readability-identifier-naming.FunctionCase
+    value: lower_case
+
+  - key: readability-identifier-naming.VariableCase
+    value: lower_case
+
+  - key: readability-identifier-naming.PrivateMemberCase
+    value: lower_case
+  - key: readability-identifier-naming.PrivateMemberPostfix
+    value: _
+
+  - key: readability-identifier-naming.ProtectedMemberCase
+    value: lower_case
+  - key: readability-identifier-naming.ProtectedMemberPostfix
+    value: _
+
+  - key: readability-identifier-naming.ClassConstantCase
+    value: PascalCase
+
+  - key: readability-identifier-naming.GlobalConstantCase
+    value: PascalCase
