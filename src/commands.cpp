@@ -87,12 +87,8 @@ CommandResult handle_command(const std::string& input, int last_status) {
 		args = std::move(alias_args);
 	}
 
-	if (args[0] == "exit") {
-		return { .should_exit = true };
-	}
-
 	if (is_builtin(args[0])) {
-		return { .status = run_builtin(args) };
+		return run_builtin(args);
 	}
 
 	return { .status = run_command(args) };

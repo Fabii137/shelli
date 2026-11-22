@@ -2,5 +2,6 @@
 
 #include <string>
 #include <vector>
+#include "commands/result.hpp"
 
-int cd(const std::vector<std::string>& args);
+CommandResult cd(const std::vector<std::string>& args);
