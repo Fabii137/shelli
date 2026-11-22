@@ -29,7 +29,7 @@ static int run_command(const std::vector<std::string>& args) {
 	pid_t pid = fork();
 	if (pid == -1) {
 		std::cerr << "Failed to fork: " << std::strerror(errno) << "\n";
-		return 1;
+		return errno;
 	}
 
 	if (pid > 0) {
@@ -41,7 +41,7 @@ static int run_command(const std::vector<std::string>& args) {
 		}
 		if (ret == -1) {
 			std::cerr << "waitpid failed: " << std::strerror(errno) << "\n";
-			return 1;
+			return errno;
 		}
 
 		if (WIFEXITED(status)) {
