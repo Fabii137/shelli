@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include <vector>
 #include <string>
-#include "commands/alias.hpp"
+#include "commands/aliases.hpp"
 #include "commands/expansions.hpp"
 #include "commands/builtins.hpp"
 #include <sys/wait.h>

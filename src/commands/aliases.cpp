@@ -1,4 +1,4 @@
-#include "alias.hpp"
+#include "aliases.hpp"
 #include <unordered_map>
 
 static const std::unordered_map<std::string, std::string> aliases {
